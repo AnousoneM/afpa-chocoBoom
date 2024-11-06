@@ -1,0 +1,97 @@
+body {
+    background-color: #1b8b8f;
+    font-family: "PT Sans Narrow";
+}
+
+h1,
+h2,
+h3 {
+    font-size: 1.4em;
+}
+
+nav {
+    font-size: 1.6em;
+    background-color: #603b2f;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:hover {
+    background-color: #93796b;
+}
+
+header,
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header.container {
+    text-align: center;
+}
+
+main.container {
+    display: flex;
+}
+
+section {
+    width: 70%;
+    text-align: center;
+    padding: 1rem;
+}
+
+section h2,
+aside h2 {
+    background-color: #603b2f;
+    color: white;
+    border-radius: 5px;
+    padding: 0.2rem 0;
+    width: 90%;
+    margin: 1.5rem auto 0 auto;
+}
+
+aside {
+    background-color: white;
+    width: 30%;
+    text-align: center;
+    padding: 1rem;
+}
+
+aside p {
+    text-align: justify;
+}
+
+@media (max-width: 960px) {
+
+    header,
+    main,
+    aside,
+    section {
+        width: 100%;
+    }
+
+    main.container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 560px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    section img {
+        width: 100%;
+    }
+
+    aside {
+        display: none;
+    }
+}
